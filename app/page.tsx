@@ -50,16 +50,13 @@ export default function Home() {
       {/* Hero Headings and Visual Showcase */}
       <HeroSection />
 
-      {/* Floating details and instant price booking calculator */}
-      <QuickBookingForm />
-
-      {/* Structured grid details of customer support, GPS, etc */}
-      <WhyChooseUs />
-
       {/* List of services */}
       <ServicesSection />
 
-      {/* Vehicle class specification sheets */}
+            {/* Structured grid details of customer support, GPS, etc */}
+      <WhyChooseUs />
+
+            {/* Vehicle class specification sheets */}
       <FleetSection />
 
       {/* User booking timeline steps */}
@@ -75,7 +72,7 @@ export default function Home() {
       <Testimonials />
 
       {/* Collapsible details for cancellations/refunds/flights */}
-      <FAQSection />
+      {/* <FAQSection /> */}
 
       {/* CTA booking / contact prompts */}
       <CTASection />

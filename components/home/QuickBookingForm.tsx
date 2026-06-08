@@ -75,8 +75,6 @@ export default function QuickBookingForm() {
   return (
     <section id="booking-section" className="py-20 bg-light relative scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
         <ScrollReveal direction="up">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4 tracking-tight">

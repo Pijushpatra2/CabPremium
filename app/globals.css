@@ -1,0 +1,420 @@
+@import "tailwindcss";
+
+/* ==========================================
+   THEME VARIABLES
+   ========================================== */
+
+@theme {
+  /* ==========================================
+     BRAND COLORS
+     ========================================== */
+
+  /* Primary Taxi Yellow */
+  --color-primary: #F5B400;
+
+  /* Bright Golden Yellow */
+  --color-secondary: #FFC72C;
+
+  /* Light Gold Accent */
+  --color-accent: #FFD95A;
+
+  /* Dark Gold Hover */
+  --color-accent-hover: #E5A800;
+
+  /* Soft Gold Background */
+  --color-accent-light: #FFF8E1;
+
+  /* ==========================================
+     DARK THEME COLORS
+     ========================================== */
+
+  /* Main Dark Navy */
+  --color-dark: #070B14;
+
+  /* Deep Background */
+  --color-dark-bg: #03060D;
+
+  /* Card Background */
+  --color-card: #131C2F;
+
+  /* Card Hover */
+  --color-card-hover: #18233A;
+
+  /* Border */
+  --color-border: rgba(245, 180, 0, 0.12);
+
+  /* ==========================================
+     TEXT COLORS
+     ========================================== */
+
+  /* Pure White */
+  --color-white: #FFFFFF;
+
+  /* Light Gray */
+  --color-muted: #AAB4C8;
+
+  /* Secondary Text */
+  --color-muted-light: #7D889B;
+
+  /* ==========================================
+     TYPOGRAPHY
+     ========================================== */
+
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* ==========================================
+     ANIMATIONS
+     ========================================== */
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float-delayed 7s ease-in-out infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+
+  @keyframes float {
+    0%,100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+  }
+
+  @keyframes float-delayed {
+    0%,100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(15px) rotate(-2deg);
+    }
+  }
+}
+
+/* ==========================================
+   ROOT
+   ========================================== */
+
+:root {
+  /* Main Background */
+  --background: #070B14;
+
+  /* Main Text */
+  --foreground: #FFFFFF;
+}
+
+/* ==========================================
+   BODY
+   ========================================== */
+
+body {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(245, 180, 0, 0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(255, 199, 44, 0.04),
+      transparent 30%
+    ),
+    #070B14;
+
+  color: var(--foreground);
+
+  font-feature-settings:
+    "cv02",
+    "cv03",
+    "cv04",
+    "cv11";
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ==========================================
+   HEADINGS
+   ========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+p {
+  color: #AAB4C8;
+}
+
+/* ==========================================
+   GLASS NAVBAR
+   ========================================== */
+
+.glass-nav {
+  background: rgba(7, 11, 20, 0.75);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-bottom: 1px solid rgba(245, 180, 0, 0.08);
+}
+
+/* ==========================================
+   GLASS CARD
+   ========================================== */
+
+.glass-card {
+  background: rgba(19, 28, 47, 0.7);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(245, 180, 0, 0.08);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    0 0 20px rgba(245, 180, 0, 0.03);
+
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(245, 180, 0, 0.25);
+
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.35),
+    0 0 25px rgba(245, 180, 0, 0.08);
+}
+
+/* ==========================================
+   DARK CARD
+   ========================================== */
+
+.glass-card-dark {
+  background: rgba(14, 21, 37, 0.85);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(245, 180, 0, 0.12);
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #F5B400,
+    #FFC72C
+  );
+
+  color: #070B14;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    135deg,
+    #FFC72C,
+    #FFD95A
+  );
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(245, 180, 0, 0.35);
+}
+
+.btn-outline {
+  border: 1px solid rgba(245, 180, 0, 0.25);
+
+  color: #F5B400;
+
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(245, 180, 0, 0.1);
+
+  border-color: #F5B400;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
+.hero-bg {
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(245, 180, 0, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #0A1220 0%,
+      #070B14 100%
+    );
+}
+
+/* ==========================================
+   FEATURE CARDS
+   ========================================== */
+
+.feature-card {
+  background: #131C2F;
+
+  border: 1px solid rgba(245, 180, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: rgba(245, 180, 0, 0.25);
+
+  transform: translateY(-8px);
+}
+
+/* ==========================================
+   INPUTS
+   ========================================== */
+
+input,
+textarea,
+select {
+  background: rgba(19, 28, 47, 0.8);
+
+  border: 1px solid rgba(245, 180, 0, 0.08);
+
+  color: #FFFFFF;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7D889B;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #F5B400;
+
+  box-shadow:
+    0 0 0 4px rgba(245, 180, 0, 0.12);
+
+  outline: none;
+}
+
+/* ==========================================
+   GRADIENT TEXT
+   ========================================== */
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    #F5B400,
+    #FFD95A
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================
+   SECTION DIVIDER
+   ========================================== */
+
+.section-divider {
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(245, 180, 0, 0.25),
+    transparent
+  );
+}
+
+/* ==========================================
+   SCROLLBAR
+   ========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E1525;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F5B400;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC72C;
+}
+
+/* ==========================================
+   TEXT SELECTION
+   ========================================== */
+
+::selection {
+  background: #F5B400;
+  color: #070B14;
+}
+
+/* ==========================================
+   CUSTOM SHADOWS
+   ========================================== */
+
+.shadow-gold {
+  box-shadow:
+    0 10px 40px rgba(245, 180, 0, 0.15);
+}
+
+.shadow-gold-lg {
+  box-shadow:
+    0 20px 60px rgba(245, 180, 0, 0.2);
+}
+
+/* ==========================================
+   ANIMATED GLOW
+   ========================================== */
+
+.glow-gold {
+  position: relative;
+}
+
+.glow-gold::before {
+  content: "";
+
+  position: absolute;
+  inset: -1px;
+
+  border-radius: inherit;
+
+  background: linear-gradient(
+    135deg,
+    rgba(245, 180, 0, 0.4),
+    rgba(255, 217, 90, 0.1)
+  );
+
+  filter: blur(15px);
+
+  z-index: -1;
+}

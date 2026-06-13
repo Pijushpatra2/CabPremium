@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#03060D] via-[#070B14]/95 to-[#070B14]/50" />
 
       {/* Top Glow */}
-      <div className="absolute top-[-200px] right-[-150px] h-[850px] w-[850px] rounded-full bg-primary/20 blur-[180px]" />
+      <div className="hidden lg:block absolute top-[-200px] right-[-150px] h-[850px] w-[850px] rounded-full bg-primary/20 blur-[180px]" />
 
       {/* Bottom Glow */}
       <div className="absolute bottom-[-250px] left-[-200px] h-[600px] w-[600px] rounded-full bg-primary/10 blur-[160px]" />
@@ -58,7 +58,7 @@ export default function HeroSection() {
         />
       </svg>
 
-      <div className="container relative z-20 mx-auto max-w-7xl px-4 pt-16 pb-40">
+      <div className="container relative z-20 mx-auto max-w-7xl px-4 pt-12 sm:pt-16 pb-40">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
@@ -74,12 +74,12 @@ export default function HeroSection() {
                 Book Your Taxi
               </span>
 
-              <span className="block text-[1rem] whitespace-nowrap bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent sm:text-6xl">
+              <span className="block mt-2 sm:mt-0 text-[1rem] whitespace-nowrap bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent sm:text-6xl">
                 Anytime, Anywhere
               </span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-lg text-[#AAB4C8] leading-relaxed">
+            <p className="mt-8 max-w-xl mx-auto text-lg text-[#AAB4C8] leading-relaxed">
               Experience comfortable and affordable rides with professional
               drivers. Airport transfers, city rides, corporate travel and
               outstation journeys in seconds.
@@ -90,8 +90,10 @@ export default function HeroSection() {
                 className="
                   group
                   rounded-2xl
-                  px-8
-                  py-4
+                  px-4
+                  sm:px-8
+                  py-3
+                  sm:py-4
                   font-bold
                   bg-gradient-to-r
                   from-primary
@@ -113,7 +115,7 @@ export default function HeroSection() {
                 />
               </button>
 
-              <button className="glass-card-dark rounded-2xl px-8 py-4 text-white font-semibold">
+              <button className="glass-card-dark rounded-2xl px-4 sm:px-8 py-3 sm:py-4 text-white font-semibold">
                 Learn More
               </button>
             </div>
@@ -137,18 +139,18 @@ export default function HeroSection() {
             {/* Stats */}
             <div className="mt-14 flex flex-wrap gap-10 justify-center lg:justify-start">
               <div>
-                <h3 className="sm:text-2xl md:text-4xl font-black text-white">15K+</h3>
-                <p className="text-[#AAB4C8]">Happy Customers</p>
+                <h3 className="text-base sm:text-2xl md:text-4xl font-black text-white">15K+</h3>
+                <p className="text-[#AAB4C8] text-xs sm:text-base">Happy Customers</p>
               </div>
 
               <div>
-                <h3 className="sm:text-2xl md:text-4xl font-black text-white">250+</h3>
-                <p className="text-[#AAB4C8]">Drivers</p>
+                <h3 className="text-base sm:text-2xl md:text-4xl font-black text-white">250+</h3>
+                <p className="text-[#AAB4C8] text-xs sm:text-base">Drivers</p>
               </div>
 
               <div>
-                <h3 className="sm:text-2xl md:text-4xl font-black text-white">50K+</h3>
-                <p className="text-[#AAB4C8]">Completed Trips</p>
+                <h3 className="text-base sm:text-2xl md:text-4xl font-black text-white">50K+</h3>
+                <p className="text-[#AAB4C8] text-xs sm:text-base">Completed Trips</p>
               </div>
             </div>
           </div>

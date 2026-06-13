@@ -17,24 +17,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "CabPremium | Premium Taxi Service & Airport Transfers",
-    template: "%s | CabPremium Taxi Booking",
+    default: "DayNightCab | Premium Taxi Service & Airport Transfers",
+    template: "%s | DayNightCab Taxi Booking",
   },
   description: "Book reliable airport transfers, local city rides, outstation trips, and luxury rentals in minutes. 24/7 premium taxi service with professional drivers.",
   keywords: ["taxi booking", "airport transfers", "luxury cab", "outstation ride", "kolkata taxi", "safe taxi service", "cab service"],
-  authors: [{ name: "CabPremium" }],
-  metadataBase: new URL("https://cabpremium.vercel.app"), // Fallback domain
+  authors: [{ name: "DayNightCab" }],
+  metadataBase: new URL("https://DayNightCab.vercel.app"), // Fallback domain
   openGraph: {
-    title: "CabPremium | Premium Taxi Service",
+    title: "DayNightCab | Premium Taxi Service",
     description: "Book reliable airport transfers, local city rides, outstation trips, and luxury rentals in minutes. 24/7 premium service.",
-    url: "https://cabpremium.vercel.app",
-    siteName: "CabPremium",
+    url: "https://DayNightCab.vercel.app",
+    siteName: "DayNightCab",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CabPremium | Premium Taxi Service",
+    title: "DayNightCab | Premium Taxi Service",
     description: "Book reliable airport transfers, local city rides, outstation trips, and luxury rentals in minutes.",
   },
   alternates: {

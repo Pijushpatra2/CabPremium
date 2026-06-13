@@ -4,7 +4,7 @@ import { BookingSchema } from "@/lib/schema";
 import { getCustomerConfirmationHtml, getAdminNotificationHtml } from "@/lib/emails";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "bookings@cabpremium.com";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "bookings@DayNightCab.com";
 
 export async function POST(req: NextRequest) {
   try {
@@ -25,9 +25,9 @@ export async function POST(req: NextRequest) {
     if (resend) {
       // Send confirmation to the customer
       await resend.emails.send({
-        from: "CabPremium Bookings <onboarding@resend.dev>", // Replace with verified domain if configured
+        from: "DayNightCab Bookings <onboarding@resend.dev>", // Replace with verified domain if configured
         to: bookingData.email,
-        subject: `Booking Confirmed #${bookingId} - CabPremium`,
+        subject: `Booking Confirmed #${bookingId} - DayNightCab`,
         html: getCustomerConfirmationHtml({
           bookingId,
           name: bookingData.name,
@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
 
       // Send alert to the admin
       await resend.emails.send({
-        from: "CabPremium Dispatch <onboarding@resend.dev>",
+        from: "DayNightCab Dispatch <onboarding@resend.dev>",
         to: ADMIN_EMAIL,
         subject: `NEW BOOKING REQUEST #${bookingId} - ${bookingData.name}`,
         html: getAdminNotificationHtml({

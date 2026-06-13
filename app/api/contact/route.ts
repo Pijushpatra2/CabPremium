@@ -4,7 +4,7 @@ import { ContactSchema } from "@/lib/schema";
 import { getAdminContactHtml } from "@/lib/emails";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "bookings@cabpremium.com";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "bookings@DayNightCab.com";
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
     if (resend) {
       await resend.emails.send({
-        from: "CabPremium Contact <onboarding@resend.dev>",
+        from: "DayNightCab Contact <onboarding@resend.dev>",
         to: ADMIN_EMAIL,
         subject: `NEW CONTACT FORM: ${contactData.name}`,
         html: getAdminContactHtml({

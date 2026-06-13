@@ -56,8 +56,8 @@ export default function Header() {
               <div className="bg-primary p-2 rounded-xl group-hover:bg-secondary transition-colors duration-300">
                 <Car className="h-6 w-6 text-accent" />
               </div>
-              <span className="text-xl font-bold tracking-tight text-primary">
-                Cab<span className="text-accent font-extrabold">Premium</span>
+              <span className="text-xl font-bold tracking-tight text-white">
+                Day<span className="text-accent font-extrabold">NightCab</span>
               </span>
             </Link>
 
@@ -143,8 +143,8 @@ export default function Header() {
                   <div className="bg-primary p-2 rounded-xl">
                     <Car className="h-6 w-6 text-accent" />
                   </div>
-                  <span className="text-xl font-bold tracking-tight text-primary">
-                    Cab<span className="text-accent font-extrabold">Premium</span>
+                  <span className="text-xl font-bold tracking-tight text-white">
+                    Day<span className="text-accent font-extrabold">NightCab</span>
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">

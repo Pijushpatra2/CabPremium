@@ -16,7 +16,7 @@ export default function Footer() {
                 <Car className="h-6 w-6 text-accent" />
               </div>
               <span className="text-xl font-bold tracking-tight text-white">
-                Cab<span className="text-accent font-extrabold">Premium</span>
+                Day<span className="text-accent font-extrabold">NightCab</span>
               </span>
             </Link>
             <p className="text-white/70 text-sm mb-6 leading-relaxed">
@@ -84,8 +84,8 @@ export default function Footer() {
                 <Mail className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-white/50">Email Support</p>
-                  <a href="mailto:bookings@cabpremium.com" className="text-white hover:text-accent font-semibold text-sm transition-colors">
-                    bookings@cabpremium.com
+                  <a href="mailto:bookings@DayNightCab.com" className="text-white hover:text-accent font-semibold text-sm transition-colors">
+                    bookings@DayNightCab.com
                   </a>
                 </div>
               </li>
@@ -136,7 +136,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-center">
           <p className="text-white/50 text-xs">
-            &copy; {currentYear} CabPremium Taxi Service. All rights reserved.
+            &copy; {currentYear} DayNightCab Taxi Service. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-white/50">
             <Link href="/faq" className="hover:text-accent transition-colors">Privacy Policy</Link>

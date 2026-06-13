@@ -23,7 +23,7 @@ export default function TestimonialSection() {
                 </span>
               </div>
 
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-10">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-10">
                 Trusted by thousands
                 <br />
                 of happy riders
@@ -33,10 +33,10 @@ export default function TestimonialSection() {
               <div className="flex items-center">
                 <div className="flex -space-x-4">
                   {[
-                    "/images/users/user1.jpg",
-                    "/images/users/user2.jpg",
-                    "/images/users/user3.jpg",
-                    "/images/users/user4.jpg",
+                    "/user.png",
+                    "/user.png",
+                    "/user.png",
+                    "/user.png",
                   ].map((img, index) => (
                     <div
                       key={index}
@@ -83,7 +83,7 @@ export default function TestimonialSection() {
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-primary">
                       <Image
-                        src="/images/users/reviewer.jpg"
+                        src="/user.png"
                         alt="Reviewer"
                         width={56}
                         height={56}

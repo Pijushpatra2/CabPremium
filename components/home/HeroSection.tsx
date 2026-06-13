@@ -61,7 +61,7 @@ export default function HeroSection() {
       <div className="container relative z-20 mx-auto max-w-7xl px-4 pt-16 pb-40">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* LEFT CONTENT */}
-          <div>
+          <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-5 py-2">
               <ShieldCheck size={16} className="text-primary" />
               <span className="text-primary font-semibold text-sm">
@@ -85,7 +85,7 @@ export default function HeroSection() {
               outstation journeys in seconds.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
               <button
                 className="
                   group
@@ -118,16 +118,15 @@ export default function HeroSection() {
               </button>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-6">
+            <div className="mt-10 flex flex-wrap gap-6 justify-center lg:justify-start">
               {[
                 "24/7 Available",
-                "Verified Drivers",
                 "Safe & Secure",
                 "Cashless Payment",
               ].map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-2 text-sm text-[#AAB4C8]"
+                  className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-[#AAB4C8]"
                 >
                   <CheckCircle size={16} className="text-primary" />
                   {item}
@@ -136,19 +135,19 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="mt-14 flex flex-wrap gap-10">
+            <div className="mt-14 flex flex-wrap gap-10 justify-center lg:justify-start">
               <div>
-                <h3 className="text-4xl font-black text-white">15K+</h3>
+                <h3 className="sm:text-2xl md:text-4xl font-black text-white">15K+</h3>
                 <p className="text-[#AAB4C8]">Happy Customers</p>
               </div>
 
               <div>
-                <h3 className="text-4xl font-black text-white">250+</h3>
+                <h3 className="sm:text-2xl md:text-4xl font-black text-white">250+</h3>
                 <p className="text-[#AAB4C8]">Drivers</p>
               </div>
 
               <div>
-                <h3 className="text-4xl font-black text-white">50K+</h3>
+                <h3 className="sm:text-2xl md:text-4xl font-black text-white">50K+</h3>
                 <p className="text-[#AAB4C8]">Completed Trips</p>
               </div>
             </div>
@@ -179,7 +178,9 @@ export default function HeroSection() {
                 className="
                   relative
                   z-20
-                  w-[120%]
+                  w-[110%]
+                  lg:w-[130%]
+                  xl:w-[120%]
                   max-w-[1400px]
                   lg:-mr-24
                   xl:-mr-32
@@ -195,6 +196,8 @@ export default function HeroSection() {
                 duration: 5,
               }}
               className="
+              hidden
+                lg:block
                 absolute
                 top-8
                 right-[-150]
@@ -249,6 +252,8 @@ export default function HeroSection() {
                 duration: 5,
               }}
               className="
+               hidden
+                lg:block
                 absolute
                 bottom-20
                 left-0

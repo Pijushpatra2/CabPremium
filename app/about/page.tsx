@@ -7,7 +7,7 @@ import { ShieldAlert, Users, Award, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about CabPremium's dedication to providing safe, comfortable, and reliable taxi services across Kolkata and surrounding outstations.",
+  description: "Learn about DayNightCab's dedication to providing safe, comfortable, and reliable taxi services across Kolkata and surrounding outstations.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <ScrollReveal direction="up">
             <span className="text-xs font-black text-accent uppercase tracking-widest block mb-3">Our Identity</span>
-            <h1 className="text-4xl sm:text-5xl font-black text-primary tracking-tight">About CabPremium</h1>
+            <h1 className="text-4xl sm:text-5xl font-black text-primary tracking-tight">About DayNightCab</h1>
             <p className="text-primary/70 text-sm sm:text-base mt-4 max-w-xl mx-auto leading-relaxed">
               We started with a simple vision: to eliminate the stress of local commuting and airport transfers by delivering a highly professional chauffeur service.
             </p>
@@ -38,7 +38,7 @@ export default function AboutPage() {
                   Setting New Benchmarks for Passenger Comfort
                 </h2>
                 <p className="text-primary/80 text-sm leading-relaxed mb-6">
-                  At CabPremium, we believe that a taxi ride shouldn't be a gamble. You shouldn't have to worry about driver cancellations, dirty seats, or hidden surge prices. We designed a customer-centric logistics system that handles everything for you.
+                  At DayNightCab, we believe that a taxi ride shouldn't be a gamble. You shouldn't have to worry about driver cancellations, dirty seats, or hidden surge prices. We designed a customer-centric logistics system that handles everything for you.
                 </p>
                 <p className="text-primary/80 text-sm leading-relaxed mb-8">
                   Over the years, we have grown from a small fleet of local cabs to a premium dispatch brand, operating sedans, SUVs, and luxury coaches across West Bengal, Odisha, and beyond.

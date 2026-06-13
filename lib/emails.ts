@@ -34,7 +34,7 @@ export function getCustomerConfirmationHtml({
     <html>
       <head>
         <meta charset="utf-8">
-        <title>Booking Confirmed - CabPremium</title>
+        <title>Booking Confirmed - DayNightCab</title>
         <style>
           body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f6f9fc; margin: 0; padding: 20px; color: #072a21; }
           .container { max-width: 600px; background: #ffffff; border-radius: 16px; overflow: hidden; margin: 0 auto; box-shadow: 0 4px 12px rgba(11, 93, 72, 0.05); border: 1px solid rgba(11, 93, 72, 0.08); }
@@ -56,12 +56,12 @@ export function getCustomerConfirmationHtml({
       <body>
         <div class="container">
           <div class="header">
-            <h1>CabPremium</h1>
+            <h1>DayNightCab</h1>
             <p>Reliable Ride For Every Journey</p>
           </div>
           <div class="content">
             <div class="welcome">Hello <strong>${name}</strong>,</div>
-            <p style="line-height: 1.6;">Thank you for booking with CabPremium. Your request has been received and confirmed. Below are your booking details:</p>
+            <p style="line-height: 1.6;">Thank you for booking with DayNightCab. Your request has been received and confirmed. Below are your booking details:</p>
             
             <div class="booking-id">BOOKING ID: ${bookingId}</div>
             
@@ -100,8 +100,8 @@ export function getCustomerConfirmationHtml({
             <p style="font-size: 14px; line-height: 1.6;">If you need to make any changes or cancel your ride, please contact our support team at <a href="tel:+919876543210" style="color: #0B5D48; font-weight: 600; text-decoration: none;">+91 98765 43210</a>.</p>
           </div>
           <div class="footer">
-            &copy; ${new Date().getFullYear()} CabPremium. 12 Park Street, Sector 5, Kolkata.<br>
-            For help, email <a href="mailto:bookings@cabpremium.com">bookings@cabpremium.com</a>
+            &copy; ${new Date().getFullYear()} DayNightCab. 12 Park Street, Sector 5, Kolkata.<br>
+            For help, email <a href="mailto:bookings@DayNightCab.com">bookings@DayNightCab.com</a>
           </div>
         </div>
       </body>
@@ -126,7 +126,7 @@ export function getAdminNotificationHtml({
     <html>
       <head>
         <meta charset="utf-8">
-        <title>New Ride Booking Received - CabPremium</title>
+        <title>New Ride Booking Received - DayNightCab</title>
         <style>
           body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f4f6f8; margin: 0; padding: 20px; color: #333333; }
           .container { max-width: 600px; background: #ffffff; border-radius: 12px; overflow: hidden; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid #0B5D48; }
@@ -145,7 +145,7 @@ export function getAdminNotificationHtml({
         <div class="container">
           <div class="content">
             <h2>New Ride Booking Request</h2>
-            <p style="font-size: 14px; color: #555;">A new booking has been generated on the CabPremium platform. Details below:</p>
+            <p style="font-size: 14px; color: #555;">A new booking has been generated on the DayNightCab platform. Details below:</p>
             
             <div class="info-block">
               <h3>Booking Metadata</h3>
@@ -212,7 +212,7 @@ export function getAdminNotificationHtml({
             <p style="font-size: 13px; font-weight: bold; color: #dc2626;">Action Required: Assign a driver and send confirmation coordinates via dispatch panel.</p>
           </div>
           <div class="footer">
-            This is an automated dispatch email from CabPremium System.
+            This is an automated dispatch email from DayNightCab System.
           </div>
         </div>
       </body>
@@ -234,7 +234,7 @@ export function getAdminContactHtml({
     <html>
       <head>
         <meta charset="utf-8">
-        <title>New Contact Form Submission - CabPremium</title>
+        <title>New Contact Form Submission - DayNightCab</title>
         <style>
           body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f4f6f8; margin: 0; padding: 20px; color: #333333; }
           .container { max-width: 600px; background: #ffffff; border-radius: 12px; overflow: hidden; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid #16855D; }
@@ -293,7 +293,7 @@ export function getAdminContactHtml({
             </div>
           </div>
           <div class="footer">
-            This email was sent automatically from CabPremium contact portal.
+            This email was sent automatically from DayNightCab contact portal.
           </div>
         </div>
       </body>

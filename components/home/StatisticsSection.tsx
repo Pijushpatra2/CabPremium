@@ -92,7 +92,7 @@ export default function StatisticsSection() {
                   </div>
 
                   {/* Number */}
-                  <div className="relative z-10 text-4xl lg:text-5xl font-black text-white mb-3">
+                  <div className="relative z-10 text-2xl md:text-4xl lg:text-5xl font-black text-white mb-3">
                     <Counter
                       target={stat.target}
                       duration={2}

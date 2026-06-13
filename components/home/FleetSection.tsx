@@ -11,28 +11,28 @@ const VEHICLES = [
     price: "$10.50",
     seats: 4,
     active: true,
-    image: "/images/vehicles/economy.png",
+    image: "/taxi-fleet.png",
   },
   {
     name: "SUV",
     price: "$18.75",
     seats: 6,
     active: false,
-    image: "/images/vehicles/suv.png",
+    image: "/taxi-fleet.png",
   },
   {
     name: "Luxury",
     price: "$28.90",
     seats: 4,
     active: false,
-    image: "/images/vehicles/luxury.png",
+    image: "/taxi-fleet.png",
   },
   {
     name: "Premium",
     price: "$35.00",
     seats: 6,
     active: false,
-    image: "/images/vehicles/premium.png",
+    image: "/taxi-fleet.png",
   },
 ];
 

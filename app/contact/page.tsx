@@ -109,8 +109,8 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-accent shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-bold text-sm text-primary">Email Dispatch Support</h4>
-                    <a href="mailto:bookings@cabpremium.com" className="text-xs text-primary/75 hover:text-accent font-semibold block mt-1">
-                      bookings@cabpremium.com
+                    <a href="mailto:bookings@DayNightCab.com" className="text-xs text-primary/75 hover:text-accent font-semibold block mt-1">
+                      bookings@DayNightCab.com
                     </a>
                   </div>
                 </li>

@@ -15,28 +15,29 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TaxiService",
-    "name": "CabPremium Taxi Booking Service",
-    "description": "Book reliable airport transfers, local city rides, outstation trips, and corporate travel in minutes. Clean vehicles, verified drivers, 24/7 support.",
-    "provider": {
+    name: "DayNightCab Taxi Booking Service",
+    description:
+      "Book reliable airport transfers, local city rides, outstation trips, and corporate travel in minutes. Clean vehicles, verified drivers, 24/7 support.",
+    provider: {
       "@type": "LocalBusiness",
-      "name": "CabPremium",
-      "telephone": "+91 98765 43210",
-      "email": "bookings@cabpremium.com",
-      "address": {
+      name: "DayNightCab",
+      telephone: "+91 98765 43210",
+      email: "bookings@DayNightCab.com",
+      address: {
         "@type": "PostalAddress",
-        "streetAddress": "12, Park Street, Sector 5",
-        "addressLocality": "Kolkata",
-        "addressRegion": "West Bengal",
-        "postalCode": "700091",
-        "addressCountry": "IN"
+        streetAddress: "12, Park Street, Sector 5",
+        addressLocality: "Kolkata",
+        addressRegion: "West Bengal",
+        postalCode: "700091",
+        addressCountry: "IN",
       },
-      "priceRange": "$$"
+      priceRange: "$$",
     },
-    "areaServed": "Kolkata, West Bengal, India",
-    "offers": {
+    areaServed: "Kolkata, West Bengal, India",
+    offers: {
       "@type": "Offer",
-      "priceCurrency": "INR"
-    }
+      priceCurrency: "INR",
+    },
   };
 
   return (
@@ -53,10 +54,10 @@ export default function Home() {
       {/* List of services */}
       <ServicesSection />
 
-            {/* Structured grid details of customer support, GPS, etc */}
+      {/* Structured grid details of customer support, GPS, etc */}
       <WhyChooseUs />
 
-            {/* Vehicle class specification sheets */}
+      {/* Vehicle class specification sheets */}
       <FleetSection />
 
       {/* User booking timeline steps */}
@@ -79,5 +80,3 @@ export default function Home() {
     </>
   );
 }
-
-

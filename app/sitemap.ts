@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cabpremium.vercel.app";
+  const baseUrl = "https://DayNightCab.vercel.app";
   const routes = ["", "/about", "/services", "/fleet", "/routes", "/pricing", "/faq", "/contact"];
 
   return routes.map((route) => ({

@@ -9,6 +9,7 @@ import {
   Phone,
   MessageCircle,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function WhyChooseUs() {
   const features = [
@@ -57,10 +58,12 @@ export default function WhyChooseUs() {
             {/* Outer Circle */}
             <div className="relative w-[480px] h-[480px] rounded-full border border-primary/20 bg-card flex items-center justify-center overflow-hidden">
               <div className="absolute inset-4 rounded-full overflow-hidden">
-                <img
-                  src="/images/taxi-driver.jpg"
+                <Image
+                  src="/taxi-driver.jpeg"
                   alt="Driver"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
@@ -68,39 +71,32 @@ export default function WhyChooseUs() {
             {/* Rating Card */}
             <div className="absolute left-0 bottom-10 bg-card/90 backdrop-blur-xl border border-primary/10 rounded-3xl px-8 py-6 shadow-2xl">
               <div className="flex items-end gap-1">
-                <span className="text-5xl font-bold text-white">4.9</span>
+                <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">4.9</span>
                 <span className="text-white text-xl mb-1">/5</span>
               </div>
 
               <div className="flex gap-1 my-2">
                 {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-5 h-5 fill-primary text-primary"
-                  />
+                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-primary text-primary" />
                 ))}
               </div>
 
-              <p className="text-muted text-sm">
-                10K+ Happy Customers
-              </p>
+              <p className="text-muted text-sm">10K+ Happy Customers</p>
             </div>
 
             {/* Driver Card */}
-            <div className="absolute bottom-5 right-0 bg-white rounded-full shadow-2xl px-5 py-3 flex items-center gap-4 min-w-[280px]">
-              <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt=""
-                className="w-14 h-14 rounded-full object-cover"
+            <div className="hidden md:flex absolute bottom-5 right-0 bg-white rounded-full shadow-2xl px-5 py-3 items-center gap-4 min-w-[280px]">
+              <Image
+                src="/user.png"
+                alt="User Avatar"
+                width={56}
+                height={56}
+                className="rounded-full object-cover"
               />
 
               <div className="flex-1">
-                <p className="text-xs text-gray-500">
-                  Your Driver
-                </p>
-                <h4 className="font-semibold text-gray-900">
-                  John Smith
-                </h4>
+                <p className="text-xs text-gray-500">Your Driver</p>
+                <h4 className="font-semibold text-gray-900">John Smith</h4>
               </div>
 
               <button className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
@@ -121,7 +117,7 @@ export default function WhyChooseUs() {
               </span>
             </div>
 
-            <h2 className="text-5xl font-bold text-white leading-tight mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-12">
               Your safety and
               <br />
               satisfaction come first
@@ -132,22 +128,17 @@ export default function WhyChooseUs() {
                 const Icon = item.icon;
 
                 return (
-                  <div
-                    key={index}
-                    className="flex gap-5"
-                  >
+                  <div key={index} className="flex gap-5">
                     <div className="w-16 h-16 rounded-2xl bg-card border border-primary/10 flex items-center justify-center shrink-0">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
 
                     <div>
-                      <h3 className="text-white font-semibold text-lg mb-2">
+                      <h3 className="text-white font-semibold text-base md:text-lg mb-2">
                         {item.title}
                       </h3>
 
-                      <p className="text-muted leading-relaxed">
-                        {item.desc}
-                      </p>
+                      <p className="text-xs md:text-sm text-muted leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 );

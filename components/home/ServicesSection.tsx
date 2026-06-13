@@ -18,7 +18,7 @@ const SERVICES = [
     title: "Airport Transfer",
     description:
       "Never miss a flight. Guaranteed punctual pickups and drops at Netaji Subhash Chandra Bose Airport (CCU) with flight tracking.",
-    icon: <Plane className="h-5 w-5 text-dark" />,
+    icon: <Plane className="h-5 w-5 text-primary" />,
     image:
       "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=600&q=80",
   },
@@ -101,9 +101,8 @@ export default function ServicesSection() {
               </h2>
 
               <p className="text-muted text-lg leading-relaxed">
-                From daily commutes to airport transfers, we've got you
-                covered with premium taxi services designed around your
-                schedule.
+                From daily commutes to airport transfers, we've got you covered
+                with premium taxi services designed around your schedule.
               </p>
             </div>
 
@@ -125,13 +124,7 @@ export default function ServicesSection() {
               direction="up"
               delay={index * 0.1}
             >
-              <div
-                className={`group rounded-[28px] overflow-hidden border transition-all duration-500 flex flex-col h-full hover:-translate-y-2 ${
-                  index === 0
-                    ? "bg-primary border-primary shadow-gold-lg"
-                    : "bg-card border-border hover:border-primary/30"
-                }`}
-              >
+              <div className="group rounded-[28px] overflow-hidden border border-border bg-card hover:border-primary/30 transition-all duration-500 flex flex-col h-full hover:-translate-y-2">
                 {/* Image */}
                 <div className="relative h-60 overflow-hidden">
                   <img
@@ -146,29 +139,15 @@ export default function ServicesSection() {
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-1">
                   {/* Icon */}
-                  <div
-                    className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 ${
-                      index === 0
-                        ? "bg-dark/10"
-                        : "bg-white/10 border border-white/5"
-                    }`}
-                  >
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5 bg-white/10 border border-white/5">
                     {service.icon}
                   </div>
 
-                  <h3
-                    className={`text-xl font-bold mb-3 ${
-                      index === 0 ? "text-dark" : "text-white"
-                    }`}
-                  >
+                  <h3 className="text-xl font-bold mb-3 text-white">
                     {service.title}
                   </h3>
 
-                  <p
-                    className={`text-sm leading-relaxed mb-8 flex-1 ${
-                      index === 0 ? "text-dark/80" : "text-muted"
-                    }`}
-                  >
+                  <p className="text-sm leading-relaxed mb-8 flex-1 text-muted">
                     {service.description}
                   </p>
 
@@ -176,24 +155,14 @@ export default function ServicesSection() {
                     <a
                       href="#booking-section"
                       onClick={handleScrollToBooking}
-                      className={`inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
-                        index === 0
-                          ? "text-dark"
-                          : "text-primary hover:text-secondary"
-                      }`}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors"
                     >
                       Book This Ride
 
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
 
-                    <div
-                      className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all ${
-                        index === 0
-                          ? "border-dark/20 text-dark"
-                          : "border-primary/20 text-primary"
-                      }`}
-                    >
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center border border-primary/20 text-primary transition-all">
                       <ArrowRight className="h-4 w-4" />
                     </div>
                   </div>

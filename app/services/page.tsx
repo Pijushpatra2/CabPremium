@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/shared/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Our Services",
-  description: "Explore CabPremium's specialized travel services, including airport transfers, intercity outstation cabs, corporate dispatch, and hourly rentals.",
+  description: "Explore DayNightCab's specialized travel services, including airport transfers, intercity outstation cabs, corporate dispatch, and hourly rentals.",
 };
 
 const DETAILED_SERVICES = [

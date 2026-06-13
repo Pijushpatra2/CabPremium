@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/shared/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Our Fleet",
-  description: "View CabPremium's fleet of clean, modern vehicles. Choose between executive sedans, spacious SUVs, luxury rentals, and group coaches.",
+  description: "View DayNightCab's fleet of clean, modern vehicles. Choose between executive sedans, spacious SUVs, luxury rentals, and group coaches.",
 };
 
 const DETAILED_FLEET = [

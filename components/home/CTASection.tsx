@@ -26,7 +26,7 @@ export default function RideBookingCTA() {
               {/* Taxi Image */}
               <div className="relative w-[260px] h-[140px] shrink-0">
                 <Image
-                  src="/images/taxi-yellow.png"
+                  src="/hero-img-cab-32.png"
                   alt="Taxi"
                   fill
                   className="object-contain"
